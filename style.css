@@ -1,0 +1,85 @@
+body{
+    height: 100vh;
+    display: flex;
+    background: url(To_Do_List.jpg) no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputTask-container{
+    background: url('notebook.png') center center/cover;
+    background-color:white;
+    width: 325px;
+    padding: 20px 15px;
+    border-radius: 20px;
+    display: flex;
+}
+
+input{
+    flex: 85%;
+    margin-right: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#addTask{
+    flex: 15%;
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.tasks{
+    margin-top: 10px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tasks li{
+    flex: 85%;
+    list-style: square;
+    color: rgb(54, 46, 46);
+    padding: 10px;
+    font-size: 20px;
+}
+
+.checkTask{
+    color: rgb(17, 205, 17);
+    margin: 10px 5px 10px 10px;
+    border: 1px solid grey;
+}
+
+.deleteTask{
+    color: red;
+    margin: 10px 10px 10px 5px;
+    border: 1px solid grey;
+}
+
+.checkTask:hover{
+   background-color: rgb(17, 205, 17);
+   color: white; 
+   cursor: pointer;
+}
+
+.deleteTask:hover{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+#addTask:hover{
+    background: grey;
+    color: white;
+    cursor: pointer;
+}
+
+.done{
+    text-decoration: line-through;
+}
+
+.none{
+    display: none;
+}
